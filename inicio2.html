@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro Psicopedagógico</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-image: url('images/fondodeprueba.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .container {
+            text-align: center;
+            background-color: #fff;
+            padding: 50px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .container img {
+            width: 100%;
+            max-width: 150px;
+            border-radius: 50%;
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .buttons div {
+            text-align: center;
+        }
+        .buttons img {
+            display: block;
+            margin: 0 auto 10px;
+            width: 100px;
+            height: 100px;
+        }
+        .button {
+            background-color: #17a2b8;
+            border: none;
+            color: white;
+            padding: 15px 30px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #138496;
+        }
+        /* Estilos para la flecha de retroceso */
+        .back-arrow {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 150px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html">
+        <img src="images/flecha.png" alt="Regresar" class="back-arrow">
+    </a>
+
+    <div class="container">
+        <img src="images/centro.png" alt="Centro Psicopedagógico">
+        <h1>Centro Psicopedagógico</h1>
+        
+        <div class="buttons">
+            <div>
+                <img src="images/pacientes.jpg" alt="Logo Pacientes">
+                <a href="login.html" class="button">Admin (Reservar)</a>
+            </div>
+            <div>
+                <img src="images/admin.jpg" alt="Logo Admin">
+                <a href="inicioadmin.html" class="button">Admin (Usuarios)</a>
+            </div>
+            <div>
+                <img src="images/especialista2.jpg" alt="Logo Psicopedagogos">
+                <a href="iniciopsicopedagogos.html" class="button">Psicopedagog@</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificación de Captcha v3</title>
+    <script src="https://www.google.com/recaptcha/enterprise.js?render=6LcxumAqAAAAAMiNGDf3HVxqT4vcIbg4Zp3LzaFY"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f2f5;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+        
+        .g-recaptcha-badge {
+            position: fixed;
+            bottom: 10px;
+            left: 0;
+            right: 0;
+            text-align: center;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Verificación de Captcha v3</h1>
+        <form id="demo-form" action="procesar_captcha.php" method="POST">
+            <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response">
+            <button type="submit">Verificar</button>
+        </form>
+    </div>
+
+    <script>
+      grecaptcha.ready(function() {
+        grecaptcha.execute('6LcxumAqAAAAAMiNGDf3HVxqT4vcIbg4Zp3LzaFY', {action: 'submit'}).then(function(token) {
+            
+            console.log('Token generado:', token); 
+            document.getElementById('g-recaptcha-response').value = token;
+        });
+      });
+    </script>
+</body>
+</html>

@@ -1,0 +1,284 @@
+ <!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+ <title>Contacto</title>
+    <style>
+        .recaptcha-container {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0; 
+        }
+        .register {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .register a {
+            color: #28a745;
+            text-decoration: none;
+        }
+           .recaptcha-container {
+          display: none; /* Ocultar el CAPTCHA inicialmente */
+          justify-content: center;
+          margin: 20px 0; 
+      }
+    </style>
+
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Dosis:400,500|Poppins:400,700&display=swap" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/logo.png" alt="">
+            <span>
+            </span>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-flex mx-auto flex-column flex-lg-row align-items-center">
+              <ul class="navbar-nav  ">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="conocenos.html">Conocenos </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Saludmental.html">Salud Mental </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0 ml-0 ml-lg-4 mb-3 mb-lg-0">
+                <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
+              </form>
+            </div>
+            <div class="quote_btn-container  d-flex justify-content-center">
+             <a href="">
+<p style="font-size: 12px;">Lunes a Viernes 9:00 am - 6:30 pm<br>
+Sábados 9:00 am - 2:00 pm<br>
+<strong>Tel:55-8452-6701</strong></p>
+</a>
+              </a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <link rel="stylesheet" href="css/contacto.css">
+      <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<br><br><br><br>
+<br>
+  <body>
+  <div class="contact-container" style="display: flex; justify-content: space-between;">
+    <div class="form-section" style="width: 50%; padding-right: 20px;">
+        <form id="contactForm" action="https://formspree.io/f/meoqodov" method="POST">
+            <center>
+                <h2>¿SI NECESITAS AYUDA?</h2>
+                <p>ESCRÍBENOS Y CON GUSTO NOS PONDREMOS EN CONTACTO.</p>
+            </center>
+            
+            <div class="form-group">
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre*" required>
+            </div>
+            <div class="form-group">
+                <input type="email" id="email" name="email" placeholder="E-mail*" required>
+            </div>
+            <div class="form-group">
+                <input type="tel" id="telefono" name="telefono" placeholder="Teléfono*" required>
+            </div>
+            <div class="form-group">
+                <input type="text" id="asunto" name="asunto" placeholder="Asunto">
+            </div>
+            <div class="form-group">
+                <textarea id="mensaje" name="mensaje" rows="4" placeholder="Mensaje"></textarea>
+            </div>
+
+            <!-- Contenedor de reCAPTCHA -->
+            <div class="recaptcha-container" id="recaptcha-container">
+                <div class="g-recaptcha" data-sitekey="6LcP8mMqAAAAAFARVZ650wEYBNRrmMRWfu2ltoNc"></div>
+            </div>
+
+            <center><button type="submit" class="submit-btn">Enviar</button></center>
+        </form>
+
+        <!-- Alertas de éxito o error -->
+        <div id="alertSuccess" style="display: none; color: green;">
+            ¡Tu mensaje ha sido enviado exitosamente!
+        </div>
+        <div id="alertError" style="display: none; color: red;">
+            Ocurrió un error al enviar tu mensaje. Inténtalo nuevamente.
+        </div>
+    </div>
+
+    <div class="info-section" style="width: 45%;">
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3757.5618875879927!2d-99.17458128905973!3d19.646019481603016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f5539ffe0a73%3A0xf63e2f7edf349a9!2sCentro%20Psico-Pedag%C3%B3gico%20ExpresaMente!5e0!3m2!1sen!2smx!4v1728291208450!5m2!1sen!2smx" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <div class="contact-info">
+            <h3>Información de contacto</h3>
+            <p><strong>Dirección:</strong> Av. San Antonio 32 San Bartolo, Tultitlan de Mariano Escobedo, Ciudad de México, C.P. 54900</p>
+            <p><strong>Teléfono:</strong> 55-8452-6701</p>
+            <p><strong>Email:</strong> centromaag@gmail.com</p>
+        </div>
+    </div>
+  </div>
+
+  <script>
+      // Función para verificar si todos los campos requeridos están llenos
+      function checkRequiredFields() {
+          const nombre = document.getElementById('nombre').value;
+          const email = document.getElementById('email').value;
+          const telefono = document.getElementById('telefono').value;
+          return nombre && email && telefono;
+      }
+
+      // Mostrar el CAPTCHA cuando se completan todos los campos requeridos
+      document.getElementById('contactForm').addEventListener('input', function() {
+          if (checkRequiredFields()) {
+              document.getElementById('recaptcha-container').style.display = 'flex';
+          }
+      });
+
+      // Validar el formulario antes de enviar
+      document.getElementById('contactForm').addEventListener('submit', function(event) {
+          event.preventDefault(); // Evita que el formulario se envíe de inmediato
+          
+          // Verificar si el CAPTCHA ha sido completado
+          const captchaResponse = grecaptcha.getResponse();
+          if (!captchaResponse) {
+              alert('Por favor verifica el CAPTCHA antes de enviar el formulario.');
+              return;
+          }
+
+          // Procede con el envío del formulario si el CAPTCHA está verificado
+          var form = event.target;
+          var formData = new FormData(form);
+
+          fetch(form.action, {
+              method: form.method,
+              body: formData,
+              headers: { 'Accept': 'application/json' }
+          })
+          .then(function(response) {
+              if (response.ok) {
+                  document.getElementById('alertSuccess').style.display = 'block';
+                  document.getElementById('alertError').style.display = 'none';
+                  form.reset();
+                  grecaptcha.reset(); // Reiniciar CAPTCHA después de envío
+                  document.getElementById('recaptcha-container').style.display = 'none'; // Ocultar CAPTCHA nuevamente
+              } else {
+                  throw new Error('Error al enviar el formulario.');
+              }
+          })
+          .catch(function(error) {
+              document.getElementById('alertError').style.display = 'block';
+              document.getElementById('alertSuccess').style.display = 'none';
+              console.error('Error:', error);
+          });
+      });
+  </script>
+
+
+        </div>
+
+<br><br><br><br>
+        </div>
+    </div>
+    <footer class="wraper_footer style-two">
+  <div class="wraper_footer_main">
+    <div class="container">
+      <div class="row footer_main">
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12"><div class="footer_main_item matchHeight"><section id="nav_menu-12" class="widget widget_nav_menu"><h5 class="widget-title">Servicios</h5><div class="menu-servicios-container"><ul id="menu-servicios" class="menu rt-mega-menu-transition-default">
+<li><a  href="neuro.html">Neurología</a></li>
+<li><a  href="clinica.html">Terapia Individual</a></li>
+<li><a  href="psica.html">Terapia Infantil</a></li>
+<li><a  href="pareja.html">Terapia de Pareja</a></li>
+<li><a  href="psico.html"> Evaluacion Psicopedagogíca</a></li>
+<li><a  href="psicope.html"> Estimulacion Temprana</a></li>
+<li><a  href="neurofeed.html">Terapia de Lenguaje</a></li>
+<li><a  href="transtornosde.html">Evaluaciones en Transtornos de Neurodesarollo</a></li>
+</ul></div></section></div>
+                   </div><div class="col-lg-4 col-md-4 col-sm-4 col-xs-12"><div class="footer_main_item matchHeight"><section id="text-5" class="widget widget_text"><h5 class="widget-title">Contáctanos</h5>      <div class="textwidget"><p><strong>Dirección:</strong> Av. San Antonio 32<br />
+San Bartolo, Tultitlan de Mariano Escobedo, Ciudad de México,<br />
+C.P. 54900</p>
+<p><strong>Teléfono:<br />
+</strong>55-8452-6701<br />
+</p>
+<p><strong>Whatsapp:</strong> 55-8452-6701</p>
+</div>
+    </section></div>
+                   </div><div class="col-lg-4 col-md-4 col-sm-4 col-xs-12"><div class="footer_main_item matchHeight"><section id="text-6" class="widget widget_text"><h5 class="widget-title">Horarios de atención:</h5>      <div class="textwidget"><p>Lunes a Viernes 9:00 am &#8211; 6:30 pm<br />
+Sábados 9:00 am &#8211; 2:00 pm</p>
+</div>
+    </section><section id="radiantthemes_social_widget-3" class="widget widget_radiantthemes_social_widget">
+    <h2 class="widget-title">Nuestras Redes</h2>
+    <ul class="social" style="display: flex; align-items: center; gap: 10px;">
+        <li class="facebook">
+            <a href="https://www.facebook.com/profile.php?id=61568492020337" target="_blank">
+                <img src="images/Facebookxd.png" alt="Facebook" style="width: 55px; height: 55px;">
+            </a>
+        </li>
+        <li class="correo">
+            <a href="https://www.instagram.com/centromaag/?hl=en" target="_blank">
+                <img src="images/insta.png" alt="Correo" style="width: 70px; height: 60px;">
+            </a>
+        </li>
+    </ul>
+</section></div>
+                   </div>     </div>
+    </div>
+  </div>
+  <div class="wraper_footer_copyright">
+    <div class="container">
+      <!-- row -->
+      <div class="row footer_copyright">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <div class="footer_copyright_item text-center">
+            <p>© 2024 Hecho Por Cecytem Plantel Tultitlan</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+</body>
+</html>

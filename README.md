@@ -1,1 +1,9 @@
-# CentroPsi Este proyecto es una plataforma para gestionar información psicológica y administrativa de un centro de atención. ## 📁 Contenido - Registro de pacientes - Gestión de citas - Reportes clínicos - Acceso para psicólogos y administradores ## 🚀 Tecnologías utilizadas - HTML, CSS y JavaScript - PHP y MySQL (si aplica) - Bootstrap (si estás usando diseño responsivo) ## ⚙️ Cómo usar 1. Clona este repositorio: ```bash git clone https://github.com/tuusuario/Centropsi.git
+##   Calendario de Eventos con PHP y MYSQL
+
+###### FullCalendar es una herramienta ideal para proyectos de gestión de eventos. Con su interfaz intuitiva y amigable, podrás crear un calendario en el que puedas agendar, editar y eliminar eventos de manera sencilla. Con FullCalendar, podrás personalizar fácilmente el diseño y la funcionalidad del calendario para que se ajuste a las necesidades específicas de tu proyecto. ¡Intégralo en tu proyecto y haz la gestión de eventos una tarea fácil y agradable!
+
+![](https://raw.githubusercontent.com/urian121/imagenes-proyectos-github/master/calendario_con_full_calendar_urain_viera_webdeveloper.PNG)
+
+
+###### Por Ing. Urian Viera
+
